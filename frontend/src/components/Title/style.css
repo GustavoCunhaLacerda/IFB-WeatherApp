@@ -1,0 +1,7 @@
+.Title h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3.4rem;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+}

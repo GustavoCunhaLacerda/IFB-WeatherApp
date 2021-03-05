@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #4e65ff;
+  background: linear-gradient(to bottom, #4e65ff, #92effd);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
