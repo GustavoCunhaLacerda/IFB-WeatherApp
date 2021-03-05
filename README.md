@@ -43,7 +43,7 @@ Tecnologias que eu usei para desenvolver essa aplicação:
 **Clone o repositório e acesse a pasta**
 
 ```bash
-$ git clone https://github.com/GustavoCunhaLacerda/IFB-WeatherApp.git && cd PC3TrabalhoFinal
+$ git clone https://github.com/GustavoCunhaLacerda/IFB-WeatherApp.git && cd PC3TrabalhoFinal/frontend
 ```
 
 **Siga esses passos**
