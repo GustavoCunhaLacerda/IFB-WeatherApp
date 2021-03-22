@@ -10,7 +10,7 @@ import { GET_ALL } from '../../api';
 
 export default function Home() {
 
-    const [query, setQuery] = useState("a");
+    const [query, setQuery] = useState("Insira uma localização aqui");
     const [data, setData] = useState(null);
     
     const appStyle = {
