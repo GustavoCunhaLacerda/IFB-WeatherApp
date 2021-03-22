@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import Title from '../Title';
 import Search from '../Search';
-import CitiesPreview from '../CitiesPreview';
+// import CitiesPreview from '../CitiesPreview';
 import LocationCard from '../LocationCard';
 import UserButtons from '../UserButtons';
 

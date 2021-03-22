@@ -1,5 +1,5 @@
 import './style.css';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
 
 export default function LocationCard({ data }) {
@@ -7,60 +7,43 @@ export default function LocationCard({ data }) {
         switch (dayName) {
             case 'Mon':
                 return 'Seg';
-                break;
             case 'Tue':
                 return 'Ter';
-                break;
             case 'Wed':
                 return 'Qua';
-                break;
             case 'Thu':
                 return 'Qui';
-                break;
             case 'Fri':
                 return 'Sex';
-                break;
             case 'Sat':
                 return 'Sáb';
-                break;
             case 'Sun':
                 return 'Dom';
-                break;
             default:
-                break;
+                return 'erro';
         }
     }
 
     const statusTextToPT = function (statusText) {
         switch (statusText) {
             case 'Rain':
-                return 'Chuva'
-                break;
+                return 'Chuva';
             case 'Thunderstorms':
-                return 'Tempestade'
-                break;
+                return 'Tempestade';
             case 'Mostly Cloudy':
-                return 'Sol Com Nuvens'
-                break;
+                return 'Sol Com Nuvens';
             case 'Partly Cloudy':
-                return 'Parcialmente Nublado'
-                break;
+                return 'Parcialmente Nublado';
             case 'Cloudy':
-                return 'Nublado'
-                break;
+                return 'Nublado';
             case 'Sunny':
-                return 'Ensolarado'
-                break;
+                return 'Ensolarado';
             case 'Clear':
-                return 'Céu Limpo'
-                break;
+                return 'Céu Limpo';
             case 'Mostly Sunny':
-                return 'Ensolarado'
-                break;
-        
+                return 'Ensolarado';
             default:
                 return statusText;
-                break;
         }
     }
 
