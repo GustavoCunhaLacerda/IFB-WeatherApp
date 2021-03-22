@@ -3,7 +3,67 @@ import React, { useEffect } from 'react';
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai';
 
 export default function LocationCard({ data }) {
-    console.log(data)
+    const dayNameToPT = function (dayName) {
+        switch (dayName) {
+            case 'Mon':
+                return 'Seg';
+                break;
+            case 'Tue':
+                return 'Ter';
+                break;
+            case 'Wed':
+                return 'Qua';
+                break;
+            case 'Thu':
+                return 'Qui';
+                break;
+            case 'Fri':
+                return 'Sex';
+                break;
+            case 'Sat':
+                return 'Sáb';
+                break;
+            case 'Sun':
+                return 'Dom';
+                break;
+            default:
+                break;
+        }
+    }
+
+    const statusTextToPT = function (statusText) {
+        switch (statusText) {
+            case 'Rain':
+                return 'Chuva'
+                break;
+            case 'Thunderstorms':
+                return 'Tempestade'
+                break;
+            case 'Mostly Cloudy':
+                return 'Sol Com Nuvens'
+                break;
+            case 'Partly Cloudy':
+                return 'Parcialmente Nublado'
+                break;
+            case 'Cloudy':
+                return 'Nublado'
+                break;
+            case 'Sunny':
+                return 'Ensolarado'
+                break;
+            case 'Clear':
+                return 'Céu Limpo'
+                break;
+            case 'Mostly Sunny':
+                return 'Ensolarado'
+                break;
+        
+            default:
+                return statusText;
+                break;
+        }
+    }
+
     if (data?.location != null) {
         return (
             <div className="LocationCard">
@@ -12,7 +72,7 @@ export default function LocationCard({ data }) {
                         {`${data?.location?.city}, ${data?.location?.region} - ${data?.location?.country}`}
                     </h3>
                     <h1 className="text-center">
-                        {`${data?.current_observation?.condition?.temperature}° ${data?.current_observation?.condition?.text}`}
+                        {`${data?.current_observation?.condition?.temperature}° ${statusTextToPT(data?.current_observation?.condition?.text)}`}
                     </h1>
                     <div className="grid-x text-center">
                         <div className="cell small-6">
@@ -39,7 +99,7 @@ export default function LocationCard({ data }) {
                                 <div className="cell auto">
                                     <div className="grid-x" key={index}>
                                         <div className="cell">
-                                            <p className="dayName">{day.day}</p>
+                                            <p className="dayName">{ dayNameToPT(day.day) }</p>
                                         </div>
                                         <div className="cell">
                                             <div className="grid-x grid-padding-x align-center">
