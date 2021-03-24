@@ -27,7 +27,7 @@ export default function Home() {
     if (json.forecasts.length === 0) {
       setData(null);
       alert("Local não encontrado!");
-    };
+    }
     else {
       console.log(json);
       setData(json);
