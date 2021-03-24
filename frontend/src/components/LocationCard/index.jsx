@@ -85,7 +85,7 @@ export default function LocationCard({ data }) {
             <div className="cell small-6">
               <h4>
                 {" "}
-                {`Humidade: ${data?.current_observation?.atmosphere?.humidity} %`}{" "}
+                {`Umidade: ${data?.current_observation?.atmosphere?.humidity} %`}{" "}
               </h4>
             </div>
           </div>
