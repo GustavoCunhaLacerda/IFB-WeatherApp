@@ -24,7 +24,10 @@ export default function Home() {
     const { url, headers } = GET_ALL(query);
     response = await fetch(url, { headers });
     json = await response.json();
-    if (json.forecasts.length === 0) setData(null);
+    if (json.forecasts.length === 0) {
+      setData(null);
+      alert("Local não encontrado!");
+    };
     else {
       console.log(json);
       setData(json);
