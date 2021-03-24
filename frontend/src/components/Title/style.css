@@ -1,11 +1,11 @@
 .Title {
-    margin-top: 50px;
-    margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .Title h1 {
-    color: #ffffff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 3.8rem;
-    text-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+  color: #ffffff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3.8rem;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
 }

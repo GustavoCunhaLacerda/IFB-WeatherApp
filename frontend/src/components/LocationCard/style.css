@@ -1,59 +1,59 @@
 .LocationCard .space {
-    height: 200px;
+  height: 200px;
 }
 
 .LocationCard .card {
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    height: 580px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border-radius: 30px;
-    background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 580px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 30px;
+  background-color: #fff;
 }
 
 .LocationCard h1,
 h2,
 h3,
 h4 {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .LocationCard h1 {
-    font-size: 3.4rem;
+  font-size: 3.4rem;
 }
 
 .LocationCard h3 {
-    font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 .LocationCard h4 {
-    font-size:  1.4rem;
+  font-size: 1.4rem;
 }
 
 .LocationCard.days {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .LocationCard div.style17 {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border: 1px solid #4e65ff55;
-    border-radius: 30px;
-    width: 90%;
-    text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 1px solid #4e65ff55;
+  border-radius: 30px;
+  width: 90%;
+  text-align: center;
 }
 
 p.dayName {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 p.dayLow,
 p.dayHigh {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .LocationCard .arrowIcon {
-    color: #4e65ffaa;
+  color: #4e65ffaa;
 }

@@ -1,11 +1,6 @@
-import './style.css';
-import React from 'react';
+import "./style.css";
+import React from "react";
 
 export default function CitiesPreview() {
-
-    return (
-        <div>
-            
-        </div>
-    );
+  return <div></div>;
 }
