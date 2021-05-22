@@ -9,6 +9,10 @@ module.exports = {
       center: true,
     },
     fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+
     },
     colors: {
       transparent: 'transparent',
@@ -19,7 +23,8 @@ module.exports = {
       indigo: colors.indigo,
       red: colors.rose,
       yellow: colors.amber,
-      blue: colors.blue
+      blue: colors.blue,
+      green: colors.green
     }
   },
   variants: {

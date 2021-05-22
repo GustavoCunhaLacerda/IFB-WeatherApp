@@ -4,8 +4,8 @@ import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
 export default function LocationCard({ data }) {
   if (data?.location != null) {
     return (
-      <div className="LocationCard  flex items-center justify-center rounded-lg">
-        <div className="rounded-lg bg-white m-5 p-10 w-1/3">
+      <div className="LocationCard  flex items-center justify-center rounded-lg mb-5">
+        <div className="rounded-lg bg-white p-8 lg:w-1/2 md:w-full sm:w-full shadow-md bg-gray-50">
           <h3 className="grid text-lg justify-items-center mb-5 mt-2">
             {`${data?.location?.city}, ${data?.location?.region} - ${data?.location?.country}`}
           </h3>
@@ -28,27 +28,25 @@ export default function LocationCard({ data }) {
           <div className="grid grid-flow-col grid-cols-2 justify-items-center mb-5">
             <div className="">
               <h4>
-                {" "}
                 {`Wind: ${data?.current_observation?.wind?.speed} Km/h `}{" "}
               </h4>
             </div>
             <div className="">
               <h4>
-                {" "}
                 {`Humidity: ${data?.current_observation?.atmosphere?.humidity} %`}{" "}
               </h4>
             </div>
           </div>
-          <div className="grid grid-flow-col grid-cols-6 mb-2 justify-items-center">
+          <div className="grid grid-flow-col grid-cols-6 gap-2 justify-items-center text-center mt-10">
             {data?.forecasts?.slice(1, 7).map((day, index) => {
               return (
-                <div className="" key={index}>
+                <div className="ring-2 p-3 rounded-lg" key={index}>
                   <div className="">
                     <p className="">{day.day}</p>
                   </div>
-                  <div className="flex">
-                    <p className="">{day.low}°</p>
-                    <p className="">{day.high}°</p>
+                  <div className="grid grid-flow-col grid-cols-2 justify-items-center">
+                    <p className=" ">{day.high}°</p>
+                    <p className=" ">{day.low}°</p>
                   </div>
                 </div>
               );
