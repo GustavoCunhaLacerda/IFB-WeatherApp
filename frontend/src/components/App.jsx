@@ -5,7 +5,7 @@ import Home from "./views/Home";
 
 export default function App() {
   return (
-    <div className="App bg-indigo-500 w-full h-screen">
+    <div className="App flex items-center justify-center h-screen bg-blue-600">
       <Home />
     </div>
   );

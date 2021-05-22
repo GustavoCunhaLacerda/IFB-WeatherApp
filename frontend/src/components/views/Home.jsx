@@ -4,19 +4,13 @@ import Title from "../Title";
 import Search from "../Search";
 // import CitiesPreview from '../CitiesPreview';
 import LocationCard from "../LocationCard";
-import UserButtons from "../UserButtons";
+// import UserButtons from "../UserButtons";
 
 import { GET_ALL } from "../../api";
 
 export default function Home() {
 	const [query, setQuery] = useState(null);
 	const [data, setData] = useState(null);
-
-	const appStyle = {
-		background: "linear-gradient(to bottom, #4e65ff, #92effd)",
-		width: "100vw",
-		height: "100vh",
-	};
 
 	async function getData() {
 		let response;
@@ -59,7 +53,7 @@ export default function Home() {
 			</div> */}
 
 			<div className="container">
-				<Title text="Previsão do Tempo" />
+				<Title text="Weather Forecast" />
 			</div>
 			<div className="cell">
 				<LocationCard query={query} data={data} />

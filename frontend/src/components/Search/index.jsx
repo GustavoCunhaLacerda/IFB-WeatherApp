@@ -1,20 +1,20 @@
 import React from "react";
-import { BsSearch } from "react-icons/bs";
 
 export default function Search({ query, onQueryChange, getData }) {
   return (
     <div className="container flex w-1/2">
-      <span className="p-input-icon-right w-full">
-        <i onClick={() => getData()}>
-          <BsSearch />
-        </i>
-
-        <input
-          className="block appearance-none bg-white placeholder-gray-600 border border-indigo-200 rounded py-2 px-3 text-gray-700 focus:outline-none focus:border-indigo-400 focus:placeholder-gray-400 focus:ring-2 focus:ring-indigo-200 object-center w-full"
-          value={query}
-          onChange={onQueryChange}
-          placeholder="Insira uma localização aqui" />
-      </span>
+      <div className="flex w-full">
+        <input className="rounded-l-lg p-4 border-s mr-0 border-b border-s text-gray-400 border-gray-200 bg-white w-full"
+          placeholder="Insert one location here"
+          value={query || ''}
+          onChange={onQueryChange} />
+        <button
+          className="px-8 rounded-r-lg bg-blue-200  text-gray-900 font-bold p-4 uppercase border-white border-4"
+          onClick={() => getData()}>
+          SEARCH
+          </button>
+      </div>
     </div>
   );
+
 }
