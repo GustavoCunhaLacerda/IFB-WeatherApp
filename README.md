@@ -34,6 +34,7 @@ Tecnologias que eu usei para desenvolver essa aplicação:
 - JavaScript
 - CSS3
 - HTML5
+- Tailwind 
 
 
 ## 💻 Como testar e utilizar
